@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+## Summary
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The purpose of this was to develop a basic app with CRUD operations.
 
-## Available Scripts
+This means that the app should be able to create, read, upadte and deletes products.
 
-In the project directory, you can run:
+For creating new products, the method used was POST
 
-### `npm start`
+For reading/getting the products, the method used was GET
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+For updating the products, the method used was PATCH
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+For deleting the products, the method used was DELETE
 
-### `npm test`
+In case of the front end, the app was developed using React Library. Also, some extra libraries were applied to it. Like, React Router,
+Material UI and CSS Transition Group.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+On the other side, for the back end, it was mainly done with Node JS with use of the Express Framework. Also, for the data base MongoDB was used with the application of Mongoose.
 
-### `npm run build`
+Finally, environmental variables were used for sensitve data
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Endpoints
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The available endpoints that can be found are:
+'/' -> used for the get and post methods. In case of the former, for retrieving the list of products and for the latter, creating products
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+'/:pid/view' -> this endpoint is used when the user wants to check a certain product in detail
 
-### `npm run eject`
+'/:pid' -> this one was used either for updating and deleting a specific product
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Deployment
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Front end -> Firebase https://products-challenge-3eea7.firebaseapp.com/
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Back end -> Heroku https://challenge-product.herokuapp.com/
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Repo -> Github https://github.com/malks14/challenge-product
 
-## Learn More
+## Missing points
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The only missing part of this challenge is uploading images to a product.
