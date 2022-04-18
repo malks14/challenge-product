@@ -1,0 +1,15 @@
+.productItemCtn {
+    border: 1px solid lightblue;
+    width: 500px;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+}
+
+.productImg img{
+    width: 150px;
+    height: 140px;
+}

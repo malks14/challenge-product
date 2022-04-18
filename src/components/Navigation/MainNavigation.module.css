@@ -1,0 +1,51 @@
+.contactBtn,
+.contactDrawer {
+  cursor: pointer;
+  border: 1px solid #292929;
+  border-radius: 30px;
+  color: #292929;
+  background: transparent;
+  padding: 0.5rem;
+  font: inherit;
+  font-family: var(--font-family);
+}
+
+.navTitle {
+  font-family: var(--font-family);
+}
+
+.hambBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.navLinks,
+.contactBtn {
+  display: none;
+}
+.navDrawer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contactDrawer {
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .contactBtn,
+  .navLinks {
+    display: block;
+  }
+  .hambBtn {
+    display: none;
+  }
+
+  .contactBtn:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}

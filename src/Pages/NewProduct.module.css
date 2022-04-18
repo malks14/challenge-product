@@ -1,0 +1,29 @@
+.container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.formCtn {
+    border: 2px solid grey;
+    height: 300px;
+    width: 300px;
+
+}
+
+.formCtn form {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 0.2rem 0.3rem;
+    background-color: green;
+    border: none;
+    color: white;
+}
